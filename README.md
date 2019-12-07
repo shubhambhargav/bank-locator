@@ -1,5 +1,5 @@
-# Bank Locator
-This application helps in discovering the bank details across a variety of locations and ISFC codes.
+# Banker
+This application helps in managing the bank details across a variety of cities.
 
 ## Contribute
 
@@ -23,10 +23,16 @@ docker run --name banker-postgres -p 5432:5432 -e POSTGRES_PASSWORD=not-so-secur
 ```
 CREATE USER banker WITH PASSWORD 'still-not-secure';
 
+# Download data (please run it outside the repo setup)
+git clone https://github.com/snarayanank2/indian_banks.git
+
+# Upload data to postgres (please run this from the root directory of the above downloaded data)
 psql -h localhost -p 5432 -U banker postgres < indian_banks.sql
 ```
 
-#### Run Locally
+## Deploy
+
+### Locally
 ```
 python manage.py runserver 8080
 ```

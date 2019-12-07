@@ -1,1 +1,1 @@
-web: gunicorn banker.wsgi --log-file -
+web: gunicorn bank_locator.wsgi --log-file -

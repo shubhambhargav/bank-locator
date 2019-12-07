@@ -32,7 +32,27 @@ psql -h localhost -p 5432 -U banker postgres < indian_banks.sql
 
 ## Deploy
 
-### Locally
+### Locally (without heroku)
 ```
 python manage.py runserver 8080
+```
+
+### Locally (with heroku)
+```
+# Assuming that heroku login is already done
+heroku local
+```
+
+### Remote
+```
+# Please skip the following if already done
+heroku login
+heroku createapp bank-locator
+heroku config:set DISABLE_COLLECTSTATIC=1
+
+# Deploy from master
+git push heroku master
+
+# [Optional] Deploy from a custom branch
+git push heroku <branch-name>:master
 ```

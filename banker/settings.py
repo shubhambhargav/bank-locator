@@ -25,7 +25,7 @@ SECRET_KEY = 'jm=#$02rj(u^#nfrx&wy5x2^*5$d#y9z^d17e%2(m!4yiyt!@z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bank-locator.herokuapp.com']
 
 
 # Application definition

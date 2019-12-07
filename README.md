@@ -1,5 +1,5 @@
-# Banker
-This application helps in managing the bank details across a variety of cities.
+# Bank Locator
+This application helps in discovering the bank location details.
 
 ## Contribute
 

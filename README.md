@@ -39,6 +39,8 @@ python manage.py runserver 8080
 
 ### Locally (with heroku)
 ```
+export APP_HOST=localhost
+
 # Assuming that heroku login is already done
 heroku local
 ```

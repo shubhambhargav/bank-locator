@@ -1,0 +1,5 @@
+0.1.0:
+    date: 2019-12-07
+    features:
+        - Added APIs for branch discovery via IFSC code, city and name
+        - Added auth for APIs with JWT token

@@ -1,5 +1,6 @@
 {
     "name": "Bank Locator",
+    "version": "0.1.0",
     "description": "Bank discovery made easy",
     "image": "heroku/python",
     "repository": "https://github.com/shubhambhargav/bank-locator",

@@ -1,3 +1,8 @@
+0.1.1:
+    date: 2019-12-07
+    bugfixes:
+        - Disabled DEBUG in production
+
 0.1.0:
     date: 2019-12-07
     features:

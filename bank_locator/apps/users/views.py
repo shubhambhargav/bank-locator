@@ -1,4 +1,5 @@
 """User views"""
+from datetime import datetime
 from django.contrib.auth import authenticate, login
 from rest_framework_jwt.settings import api_settings
 from rest_framework import permissions, generics, status
@@ -27,7 +28,8 @@ class LoginView(generics.CreateAPIView):
 
         serializer = TokenSerializer(
             data={
-                'token': api_settings.JWT_ENCODE_HANDLER(api_settings.JWT_PAYLOAD_HANDLER(user))
+                'token': api_settings.JWT_ENCODE_HANDLER(api_settings.JWT_PAYLOAD_HANDLER(user)),
+                'expires_at': datetime.utcnow() + api_settings.JWT_EXPIRATION_DELTA
             }
         )
         serializer.is_valid()

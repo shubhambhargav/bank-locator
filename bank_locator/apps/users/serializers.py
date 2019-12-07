@@ -9,6 +9,7 @@ from .models import CustomUserModel
 class TokenSerializer(serializers.Serializer):
     """This serializer serializes the token data"""
     token = serializers.CharField(max_length=255)
+    expires_at = serializers.DateTimeField()
 
 
 class UserSerializer(serializers.ModelSerializer):

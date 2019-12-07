@@ -51,6 +51,7 @@ heroku local
 heroku login
 heroku createapp bank-locator
 heroku config:set DISABLE_COLLECTSTATIC=1
+heroku config:set APP_HOST=bank-locator.herokuapp.com
 
 # Deploy from master
 git push heroku master

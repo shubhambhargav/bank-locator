@@ -18,7 +18,7 @@ from django.conf.urls import url, include
 from django.urls import path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    url('branches/', include('bank_locator.apps.banks.urls')),
-    url('users/', include('bank_locator.apps.users.urls'))
+    path('v1/admin/', admin.site.urls),
+    url('v1/branches/', include('bank_locator.apps.banks.urls')),
+    url('v1/users/', include('bank_locator.apps.users.urls'))
 ]
